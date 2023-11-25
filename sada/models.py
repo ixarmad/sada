@@ -8,7 +8,7 @@ class Product(Model):
     active = BooleanField(default=True)
     created_at = DateTimeField(auto_now_add=True)
     description = TextField(null=True, blank=True)
-    metadata = JSONField(default=dict)
+    metadata = JSONField(default=dict, blank=True)
     name = CharField(max_length=255)
     updated_at = DateTimeField(auto_now=True)
 
