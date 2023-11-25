@@ -26,8 +26,7 @@ INSTALLED_APPS = [
 
 Then, include the sada URLconf in your project `urls.py`:
 
-```
-python
+```python
 from django.urls import include
 
 urlpatterns = [
