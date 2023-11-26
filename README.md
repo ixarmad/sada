@@ -45,13 +45,14 @@ python manage.py migrate
 
 ## Models
 
-Sada provides one main model: Product.
+Sada provides two main models: `Product` and `Price`.
 
-- Product represents a product with fields like name, description, active, and metadata.
+- `Product` represents a product with fields like name, description, active, and metadata.
+- `Price` represents the pricing information related to a product.
 
 ## Views
 
-Sada provides several views for managing products:
+Sada provides several views for managing products and prices:
 
 - `ProductListView`: Displays a list of all products.
 - `ProductDetailView`: Displays detailed information about a specific product.
@@ -59,16 +60,27 @@ Sada provides several views for managing products:
 - `ProductUpdateView`: Allows you to update an existing product.
 - `ProductDeleteView`: Allows you to delete a product.
 
+- `PriceListView`: Displays a list of all prices.
+- `PriceDetailView`: Displays detailed information about a specific price.
+- `PriceCreateView`: Allows you to create a new price.
+- `PriceUpdateView`: Allows you to update an existing price.
+- `PriceDeleteView`: Allows you to delete a price.
+
 These views are accessible via the URLs defined in `sada/urls.py`.
 
 ## Templates
 
-Sada provides several templates for displaying products:
+Sada provides several templates for displaying products and prices:
 
-- `sada/product_list.html`: Displays a list of all products.
-- `sada/product_detail.html`: Displays detailed information about a specific product.
-- `sada/product_form.html`: Displays a form for creating or updating a product.
-- `sada/product_confirm_delete.html`: Displays a confirmation prompt before deleting a product.
+- `sada/product/product_list.html`: Displays a list of all products.
+- `sada/product/product_detail.html`: Displays detailed information about a specific product.
+- `sada/product/product_form.html`: Displays a form for creating or updating a product.
+- `sada/product/product_confirm_delete.html`: Displays a confirmation prompt before deleting a product.
+
+- `sada/price/price_list.html`: Displays a list of all prices.
+- `sada/price/price_detail.html`: Displays detailed information about a specific price.
+- `sada/price/price_form.html`: Displays a form for creating or updating a price.
+- `sada/price/price_confirm_delete.html`: Displays a confirmation prompt before deleting a price.
 
 You can customize these templates to suit your needs.
 
